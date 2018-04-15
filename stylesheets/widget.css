@@ -1,0 +1,14 @@
+
+.widget {
+    margin: 0 auto;
+}
+
+.widget, .widget > :not(.dragging) {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.widget .dragging {
+    z-index: 800;
+}
